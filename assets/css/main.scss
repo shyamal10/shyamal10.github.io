@@ -2,3 +2,98 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "jekyll-theme-prologue";
+
+.job {
+    
+
+    h4 {
+        color: black;
+        margin-bottom: -0.5rem;
+    }
+
+    span {
+        font-size: 1rem;
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+}
+
+.infotext {
+
+    position: relative;
+
+    &:hover:after, &:focus:after {
+        content: attr(aria-label);  /* on affiche aria-label */
+        position: absolute;
+        top: -2.7em;
+        left: 50%;
+            transform: translateX(-50%); /* on centre horizontalement  */
+        z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+        white-space: nowrap;  /* on interdit le retour à la ligne*/
+        padding: 2px 14px;
+        background: #222629;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+}
+
+.row-eh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    flex-wrap: wrap;
+
+    & > * {
+        margin-bottom: 1rem;
+    }
+}
+
+.card {
+	background: #ffffff;
+	padding: 2em;
+	border-radius: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.screenshot {
+
+    background: #d4d8db;
+    border-radius: 5px;
+
+    header {
+        background: #3d4144;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 0 0 5px 5px;
+        padding: 0.5em;
+        font-size: 0.8em;
+        box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+
+        h3 {
+            font-size: 1em;
+            color: #fff;
+        }
+    }
+}
+
+.t-left {
+    text-align: left !important;
+}
+
+.me-icon {
+    font-size: 2.3rem;
+    color: #3d4144;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}

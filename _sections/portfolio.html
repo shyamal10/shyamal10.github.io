@@ -4,52 +4,88 @@ icon: fa-th
 order: 2
 ---
 
-<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-  egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-  Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-  fusce hendrerit lacus ridiculus.</p>
+<div class="">
+  <h3>
+      <img src="assets/images/findcatbreed/app_icon.png" style="width:128px;" alt="Find Cat Breed App Icon"><br/>
+      Find Cat Breed</h3>
+    
+  <p>An iOS app which let you find the breed of a cat by pointing your device camera on it.</p>
+  <p>
+    <a href="https://apps.apple.com/us/app/find-cat-breed/id1484880085" class="no-border"><img src="assets/images/findcatbreed/app_store.png" alt="Download on App Store" style="width:120px; vertical-align:top;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/aurelien-roy/FindCatBreed" target="_blank">View on GitHub</a>
+  </p>
+  
+  <p>This project coupled <strong>UX designing</strong>, <strong>iOS programming</strong>, <strong>machine learning</strong> and <strong>web scrapping</strong>. For that occasion, I learned <strong>Swift</strong> on my own.</p>
 
+  <p>
   <div class="row">
-    <div class="4u 12u$(mobile)">
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="Ipsum Feugiat" /></a>
-        <header>
-          <h3>Ipsum Feugiat</h3>
-        </header>
+      <div class="4u image rounded">
+        <img src="{{ 'assets/images/findcatbreed/screenshot0.png' | relative_url }}" alt="Find Cat Breed screenshot" />
       </div>
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="Rhoncus Semper" /></a>
-        <header>
-          <h3>Rhoncus Semper</h3>
-        </header>
+      
+      <div class="4u image rounded">
+        <img src="{{ 'assets/images/findcatbreed/screenshot1.png' | relative_url }}" alt="Find Cat Breed screenshot" />
       </div>
-    </div>
-    <div class="4u 12u$(mobile)">
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic04.jpg' | relative_url }}" alt="Magna Nullam" /></a>
-        <header>
-          <h3>Magna Nullam</h3>
-        </header>
+      
+      <div class="4u image rounded">
+        <img src="{{ 'assets/images/findcatbreed/screenshot2.png' | relative_url }}" alt="Find Cat Breed screenshot" />
       </div>
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic05.jpg' | relative_url }}" alt="Natoque Vitae" /></a>
-        <header>
-          <h3>Natoque Vitae</h3>
-        </header>
-      </div>
-    </div>
-    <div class="4u 12u$(mobile)">
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic06.jpg' | relative_url }}" alt="Dolor Penatibus" /></a>
-        <header>
-          <h3>Dolor Penatibus</h3>
-        </header>
-      </div>
-      <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/pic07.jpg' | relative_url }}" alt="Orci Convallis" /></a>
-        <header>
-          <h3>Orci Convallis</h3>
-        </header>
-      </div>
-    </div>
+  </div>
+  </p>
+
+  <p>Behind the scenes, this app uses a <strong>ResNet</strong> model for cat image classification. The model was first implemented in <strong>PyTorch</strong> and trained with a dataset built from web scrapping. It was then converted to be used with <strong>CoreML</strong> framework. The model can differentiate 44 different cat breeds with a <strong>51% accuracy</strong>.</p>
+</div>
+
+
+<div style="margin-top: 120px;">
+    <h3>
+        <img src="assets/images/arabesque/app_icon.png" style="width:128px;" alt="Find Cat Breed App Icon"><br/>
+        Buisiness management software</h3>
+      
+    <p>A web app made for a school dance to manage <strong>members</strong>, <strong>billing</strong>, <strong>courses</strong>, <strong>registrations</strong> and <strong>more</strong>.</p>
+    <p>This <strong>single-page app</strong> powered with <strong>Vue.js</strong>, <strong>PHP</strong> and a <strong>REST API</strong> has been designed to be both <strong>fast</strong> and <strong>easy to use</strong>.</p>
+  
+    <p>
+        <div class="row">
+            <div class="3u 12u$(mobile)">
+              <div class="screenshot">
+                <a href="{{ 'assets/images/arabesque/screenshot2.png' | relative_url }}" class="image fit"><img src="{{ 'assets/images/arabesque/screenshot2.png' | relative_url }}" alt="Ipsum Feugiat" /></a>
+                <header>
+                  <h3>Billing</h3>
+                </header>
+              </div>
+              <div class="screenshot">
+                <a href="{{ 'assets/images/arabesque/screenshot1.png' | relative_url }}" class="image fit"><img src="{{ 'assets/images/arabesque/screenshot1.png' | relative_url }}" alt="Rhoncus Semper" /></a>
+                <header>
+                  <h3>Courses</h3>
+                </header>
+              </div>
+            </div>
+            <div class="6u 12u$(mobile)">
+              <div class="screenshot">
+                <a href="{{ 'assets/images/arabesque/screenshot0.png' | relative_url }}" class="image fit"><img src="{{ 'assets/images/arabesque/screenshot0.png' | relative_url }}" alt="Magna Nullam" /></a>
+                <header>
+                  <h3>Members</h3>
+                </header>
+              </div>
+              
+            </div>
+            <div class="3u 12u$(mobile)">
+              <div class="screenshot">
+                <a href="{{ 'assets/images/arabesque/screenshot4.png' | relative_url }}" class="image fit"><img src="{{ 'assets/images/arabesque/screenshot4.png' | relative_url }}" alt="Dolor Penatibus" /></a>
+                <header>
+                  <h3>Registrations</h3>
+                </header>
+              </div>
+              <div class="screenshot">
+                  <a href="{{ 'assets/images/arabesque/screenshot3.png' | relative_url }}" class="image fit"><img src="{{ 'assets/images/arabesque/screenshot3.png' | relative_url }}" alt="Natoque Vitae" /></a>
+                  <header>
+                    <h3>Dashboard</h3>
+                  </header>
+                </div>
+            </div>
+          </div>
+    </p>
+  
+    <p>During my studies, I used to make websites as a <strong>freelance</strong>. Initially commissioned to develop a backend for content management on the school website, my mission has been extended to build a whole buisiness-class application following the Arabesque's appreciation of my work.</p>
   </div>

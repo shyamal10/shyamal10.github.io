@@ -7,6 +7,7 @@
 <nav id="nav">
   <ul>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
+    {%- assign _pages = null -%}
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
@@ -21,7 +22,8 @@
           {%- assign _class = 'icon' -%}
         {%- endif -%}
         {%- comment -%}<!-- page.url (no underscore) is the url of the current page-->{%- endcomment -%}
-        {%- if _page.url == page.url -%}
+        {%- if _page.url == page.url && _page.layout != "home" -%}
+        {{ _page.layout }}
           <li><a href="#" id="{{- _slug -}}" class="active">
             <span class="{{ _class }} {{ _icon }}">{{- _title -}}</span>
           </a></li>
@@ -33,6 +35,7 @@
           <li><a href="{{- '/' | absolute_url -}}" id="broken-link"><span class="icon fa-unlink">[broken link]</span></a></li>
         {%- endif -%}
       {%- endfor -%}
+      #}
     {%- endunless -%}
     {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
     {%- if _pages[0] and _sections[0] -%}<hr>{%- endif -%}
