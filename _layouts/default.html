@@ -26,8 +26,11 @@
 				
 				var elemTop = $elem.offset().top;
 				var elemBottom = elemTop + $elem.height();
-				
-				return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+				if (elemBottom - elemTop < docViewBottom - docViewTop) {
+					return ((elemBottom - 0.7*(elemBottom - elemTop) <= docViewBottom) && (elemTop >= docViewTop));
+				} else {
+					return ((elemTop >= docViewTop));
+				}
 			}
 			
 			function checkAnimation() {
