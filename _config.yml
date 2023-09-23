@@ -30,17 +30,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Aurélien Roy
-subtitle: Software engineer
+title: Shyamal Singh
+subtitle: DSP engineer
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a french meticulous software designer, eager to build groundbreaking experiences.
-author: Aurélien Roy
-email: aurelien.roy@outlook.com
+  I'm an engineer interested in working on Audio Projects
+author: Shyamal Singh
+email: shyamal.p.singh@gmail.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://aurelien-roy.github.io" # the base hostname & protocol for your site
+url: "https://shyamal10.github.io" # the base hostname & protocol for your site
 
 # Social settings
 # Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
@@ -48,8 +48,8 @@ twitter_url:
 facebook_url:
 googleplus_url:
 instagram_url:
-linkedin_url: https://www.linkedin.com/in/aurelien-roy/
-github_url: https://github.com/aurelien-roy
+linkedin_url: https://www.linkedin.com/in/shyamal-singh-5225591a3/
+github_url: https://github.com/shyamal10
 pinterest_url:
 slack_url:
 dribbble_url:
